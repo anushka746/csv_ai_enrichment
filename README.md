@@ -1,6 +1,8 @@
 # CSV Data Transformation API
 
-A FastAPI application that processes CSV files and uses Groq LLM to generate new columns based on existing data. This tool allows you to intelligently transform and enrich your CSV data using AI-powered column generation.
+A FastAPI-based CSV enrichment tool that uses Groq LLMs to generate new columns from existing data.
+Upload a CSV, select columns, and download an AI-enhanced version — via web UI or API.
+
 
 ##  Features
 
@@ -52,13 +54,13 @@ A FastAPI application that processes CSV files and uses Groq LLM to generate new
 
 5. **Open the web interface**
    
-   Open `index.html` in your browser (or serve it via a local server like Live Server)
+   Open `frontend/index.html` in your browser (or serve it via a local server like Live Server)
 
 ## Usage
 
 ### Using the Web Interface
 
-1. Open `index.html` in your browser
+1. Open `frontend/index.html` in your browser
 2. Drag and drop your CSV file or click to browse
 3. Enter the source column name(s) you want to process (comma-separated)
 4. Enter the new column name(s) you want to generate (comma-separated)
@@ -166,10 +168,4 @@ Banana,"Yellow tropical fruit","Fruit"
 ```
 
 
-
-##  Acknowledgments
-
-- Built with [FastAPI](https://fastapi.tiangolo.com/)
-- Powered by [Groq](https://groq.com/) LLM
-- Uses [Pandas](https://pandas.pydata.org/) for data processing
 
